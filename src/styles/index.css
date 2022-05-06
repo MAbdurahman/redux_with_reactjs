@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro&display=swap');
+
+/* =========================================
+            Website Resets
+============================================ */
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-user-select: none !important;
+   -moz-user-select: none !important;
+   -ms-user-select: none !important;
+   -o-user-select: none !important;
+   user-select: none !important;
+}
+
+*::-moz-focus-inner {
+   border: 0 !important;
+}
+
+*:focus {
+   outline: none !important;
+}
+
+
+
+
+
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+
+
+
+/* =============================================
+                Root, Html, and Body
+================================================ */
+:root {
+   /*====== blues ======*/
+   --clr-01: #ccdce3;
+   --clr-02: #9ac1d6;
+   --clr-03: #71a7c9;
+   --clr-04: #4b8ebd;
+   --clr-05: #2a74b0;
+   --clr-06: #0d5ba3;
+   --clr-07: #043e7d;
+   --clr-08: #002757;
+   --clr-09: #001430;
+   --clr-10: #00040a;
+   /*====== grays ======*/
+   --clr-11: #cccccc;
+   --clr-12: #bfbfbf;
+   --clr-13: #b3b3b3;
+   --clr-14: #a6a6a6;
+   --clr-15: #999999;
+   --clr-16: #8c8c8c;
+   --clr-17: #666666;
+   --clr-18: #404040;
+   --clr-19: #1a1a1a;
+   --clr-20: #000000;
+   /*======  reds ======*/
+   --clr-21: #b52430;
+   --clr-22: #a8071a;
+   --clr-23: #820014;
+
+   /*====== greens ======*/
+   --clr-24: #6a8f33;
+   --clr-25: #55821a;
+   --clr-26: #417505;
+
+   --ff-head: 'Playfair Display', serif;
+   --ff-body: 'Source Sans Pro', sans-serif;
+   ;
+}
+
+body {
+   font-family: var(--ff-body);
+   color: var(--clr-10);
+   background-color: var(--clr-13);
+   background-color: var(--clr-01);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: var(--ff-head);
+}
+
+.center-text {
+   text-align: center;
+}
