@@ -4,6 +4,7 @@ import Navbar from './../components/Navbar';
 import Home from '../components/Home';
 import About from './../components/About';
 import Contact from './../components/Contact';
+import Card from './../components/Card';
 
 export default function App() {
 	return (
@@ -14,6 +15,7 @@ export default function App() {
 					<Route exact path='/' component={Home} />
 					<Route path='/about' component={About} />
 					<Route path='/contact' component={Contact} />
+					<Route path='/card/:user' component={Card} />
 				</Switch>
 			</div>
 		</BrowserRouter>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, NavLink, withRouter } from 'react-router-dom';
 
-export default function Navbar() {
+function Navbar(props) {
+	console.log(props)
 	return (
 		<nav className='ui raised very padded segment'>
 			<NavLink to='/' className='ui teal inverted segment'>
@@ -21,3 +22,5 @@ export default function Navbar() {
 		</nav>
 	);
 }
+
+export default withRouter(Navbar);
