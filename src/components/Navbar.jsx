@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, NavLink, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 function Navbar(props) {
-	console.log(props)
+	
 	return (
 		<nav className='ui raised very padded segment'>
 			<NavLink to='/' className='ui teal inverted segment'>

@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Modal from './Modal'
 
 export default function Contact() {
 	
 	return (
 		<div>
+			<Modal />
 			<div
 				className='ui raised very padded text container segment'
 				style={{ marginTop: '80px' }}
 			>
-				<Link to='/card/alex' className='ui header'>Alex</Link>
+				<Link to='/alex' className='ui header'>Alex</Link>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -24,7 +26,7 @@ export default function Contact() {
 				className='ui raised very padded text container segment'
 				style={{ marginTop: '80px' }}
 			>
-				<Link to='/card/khalil' className='ui header'>Khalil</Link>
+				<Link to='/khalil' className='ui header'>Khalil</Link>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
