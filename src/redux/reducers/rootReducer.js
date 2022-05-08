@@ -31,15 +31,18 @@ const initialState = {
 };
 
 const rootReducer = (state = initialState, action) => {
-	// switch (action.type) {
-	// 	case DELETE_CARD:
-	// 		return {};
-	// 	case FETCH_USER:
-	// 		return {};
-	// 	default:
-	// 		return state;
-	// }
-   return state;
+	switch (action.type) {
+		case DELETE_CARD:
+			let newCards = state.cards.filter(card => card.id !== action.id);
+			return {
+				...state,
+				cards: newCards,
+			};
+		case FETCH_USER:
+			return {};
+		default:
+			return state;
+	}
 };
 
 export default rootReducer;
